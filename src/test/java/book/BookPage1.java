@@ -17,7 +17,7 @@ public class BookPage1 {
 		WebDriverManager.chromedriver().setup();
 		WebDriver wd =new ChromeDriver();
 		wd.manage().timeouts().implicitlyWait(1000, TimeUnit.SECONDS);
-		
+		System.out.println("HI vivvek");
 		wd.get("https://www.expedia.co.in/");
 		wd.findElement(By.xpath("//a[@aria-controls='wizard-flight-pwa']/child::*")).click();
 		wd.findElement(By.xpath("//a[@aria-controls='wizard-flight-tab-oneway']/child::*")).click();
